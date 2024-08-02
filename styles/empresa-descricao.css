@@ -1,0 +1,70 @@
+#empresa{
+    top: -25px;
+    position: relative;
+    border-radius: 25px;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    border-top:2px solid #fccb1c ;
+    border-right: 2px solid  #fccb1c;
+}
+
+#empresa{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.descricao-empresa p{
+    width: 55ch;
+    font-family: "Poppins";
+    color: white;
+    margin-top: 3rem;
+    font-weight: 600;
+}
+
+
+.descricao-empresa h1{
+    font-size: 4rem;
+    font-family: "Poppins";
+    color: #fccb1c ;
+    font-weight: bold;
+}
+
+.imagem-empresa img{
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+}
+@media(max-width:1190px){
+    #empresa{
+        gap: 3rem;
+    }
+    .imagem-empresa img{
+        width: 450px;
+        height: 550px;
+    }
+}
+@media(max-width:1030px){
+    #empresa{
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .descricao-empresa p{
+        width: 100%;
+    }
+}
+
+@media(max-width:500px){
+ #empresa h1{
+    font-size: 2rem;
+ }
+ .imagem-empresa img{
+    width: 300px;
+    height: 400px;
+ 
+}
+}

@@ -1,0 +1,178 @@
+.home-bg{
+  background-color:#101942 ;
+  box-shadow: inset 0 -150px  #f1f7e6;
+  border-bottom: 4px solid #fccb1c;
+}
+
+.home-section{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.home-section{
+  padding-top: 4rem;
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+}
+
+.home-text span::before{
+  content: "";
+  position:absolute;
+  width: 600px;
+  height: 2px;
+  margin-top: 5rem;
+}
+
+
+
+.home-text h1{
+  font-size: 2.5rem;
+  color: #fccb1c;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.home-text p{
+  color: white;
+  font-family: "Poppins";
+  margin-top: 4rem;
+ max-width: 55ch ;
+}
+
+.home-text button{
+  margin-top: 2rem;
+  border: none;
+  padding: 10px 15px;
+  font-family: "Poppins";
+  background:#fccb1c;
+  color: black;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+
+
+.slider{
+  margin: 0 auto;
+  width: 500px;
+  height: 700px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 400%;
+  height: 700px;
+  display: flex;
+
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 25%;
+  position: relative;
+  transition: 1s;
+
+}
+
+.slide img{
+  width: 500px;
+  height: 700px;
+  border-radius: 8px;
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 500px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 2rem;
+}
+
+.manual-btn:hover{
+  background-color: white;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+
+.navigation-auto div{
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .5s;
+
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 500px;
+  margin-top: 660px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 2rem;
+}
+
+#radio1:checked ~.navigation-auto .auto-btn1{
+  background-color: white;
+}
+
+#radio2:checked ~.navigation-auto .auto-btn2{
+  background-color: white;
+}
+
+#radio3:checked ~.navigation-auto .auto-btn3{
+  background-color: white;
+}
+
+
+@media(max-width:960px){
+  .home-section{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .home-text {
+    text-align: center;
+  }
+  .home-text p{
+    max-width: max-content;
+  }
+
+  .home-img{
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+}

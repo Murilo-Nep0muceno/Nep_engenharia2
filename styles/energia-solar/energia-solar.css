@@ -1,0 +1,39 @@
+.titulo-solar h1{
+  text-align: center;
+  font-family: "Poppins";
+  margin-top: 3rem;
+  color: #91BF63;
+  font-size: 3rem;
+
+}
+
+.home-solar-panel{
+  display: flex;
+  flex-direction: column;  
+  margin: 0 auto;
+  margin-bottom: 20rem;
+  max-width: 1600px;
+}
+
+#btn-solar-fotos{
+  margin: 0 auto;
+  width: 200px;
+}
+
+#home-solar-painel-fotos {
+  background-color: red;
+  visibility: hidden;
+}
+
+
+#home-solar-painel-fotos.active {
+  gap: 20px;
+  visibility: visible;
+  background-color: blue !important;
+  opacity: 1;
+}
+
+.home-solar-panel img{
+  width: 360px;
+  margin-top: 2rem;
+}

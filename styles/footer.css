@@ -1,0 +1,143 @@
+#footer-bg{
+    background-color:black;
+    padding-top: 2rem;
+}
+
+#footer-bg span{
+    color: white;
+}
+
+#footer{
+    max-width: 1600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-height:260px ;
+    padding-top: 2rem;
+    align-items: start;
+}
+
+#footer div{
+    margin: 0 auto;
+}
+
+.footer-redes img{
+    width: 35px;
+    padding-top: 1rem;
+}
+
+.footer-redes .logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-redes, .footer-contato,.footer-info h2{
+    font-family: "Poppins";
+    color: white;
+
+}
+
+.footer-redes, .footer-contato, .footer-info {
+    padding-top: 2rem;
+
+}
+
+.footer-contato p{
+    color: white;
+    font-family: "Poppins";
+    font-size: 1.25rem;
+}
+
+
+.footer-titulo h1{
+    font-size: 8rem;
+    font-family: "Patua One";
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.footer-nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.footer-nav li a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer-nav a:hover{
+    opacity: 0.8;
+    border-bottom: 1px solid white;
+}
+
+.whats{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+    
+}
+
+.whats img{
+    width: 80px;
+}
+
+
+@media(max-width:950px){
+    #footer{
+    display: grid;
+    grid-template-columns: 1fr  4fr;
+    padding-left: 1.5rem;
+    }
+
+    .footer-contato{
+    text-align: center;
+    }
+
+   .footer-redes, .footer-info{
+    grid-column: 2/4;
+    justify-content: start;
+   }
+   
+   .footer-redes .logos{
+    gap: 1rem;
+   }
+   .whats{
+    bottom: 30px;
+   }
+   .whats img{
+    width: 70px;
+}
+    
+
+}
+
+@media(max-width:670px){
+    #footer-bg{
+        margin-left:1rem ;
+        margin-right: 1rem;
+    }
+    #footer{
+     display: flex;
+        flex-direction: column;
+        padding:0rem;
+    }
+    .footer-redes .logos{
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    .whats{
+        right: 20px;
+        z-index: 1000;
+    }
+    .whats img{
+        width: 60px;
+    }
+   
+}

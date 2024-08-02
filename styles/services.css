@@ -1,0 +1,151 @@
+.services-bg{
+  background-color: #101942;
+
+}
+
+#services{
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.projetos-bg{
+
+}
+
+#projetos{
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 10;
+  border-radius: 25px;
+
+}
+
+
+#projetos h1{
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 4rem;
+  color: white;
+  font-family: "Poppins";
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+#projetos{
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 1rem;
+}
+
+.projects-cards{
+  justify-self: center;
+  padding-left: 10px;
+  font-family: "Poppins";
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.projects-card h2{
+  color:white;
+  text-align: center;
+  font-size: 1.75rem;
+  font-family: "Poppins";
+}
+
+.projects-cards a:hover div{
+  /* background-color: red; */
+}
+
+.projects-cards p{
+  margin-top: .57rem;
+  margin-bottom: 5px;
+  text-align: start;
+  font-size: 1.10rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.projects-cards span{ 
+  font-size: 1rem;
+  color: #fccb1c;
+  font-weight: bold;
+}
+
+.projects-cards a:hover span {
+
+}
+
+.projects-cards a:hover img{
+  border: 1px solid white;
+  transition: .3s;  
+}
+
+.projects-cards a:hover p{
+  font-weight: 500;
+}
+
+.projects-cards img{
+  border-radius: 12px;
+  border: 1px solid rgba(0 ,0 , 0 ,0.1);
+  margin-top: 1rem;
+  width: 400px;
+  height: 250px;
+}
+
+@media(max-width:1267px){
+  .projects-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media(max-width:860px){
+    .projects-cards img{
+      width: 300px;
+    }
+    .projects-cards p{
+      font-size: 1rem;
+      width: 31ch;
+    }
+    .projects-card h2{
+      font-size: 1.5rem;
+    }
+  }
+
+  
+@media(max-width:690px){
+  .projects-card {
+    display: block;
+    margin: 0 auto;
+  }
+  .projects-cards img{
+    width: 400px;
+  }
+  .projects-cards{
+    align-items: center;
+  }
+  .projects-cards p{
+    font-size: initial;
+    width: 31ch;
+  }
+}
+
+@media(max-width:400px){
+ 
+  #projetos h1{
+    font-size: 2rem;
+  }
+  .projects-cards img{
+    width: 350px;
+    
+  }
+}
