@@ -52,7 +52,6 @@ align-items: center;
 @media(max-width:860px){
   #btn-mobile{
     display: flex;
-    padding: .5rem 1rem;
     font-size: 1rem;
     border: none;
     background: none;
@@ -67,6 +66,9 @@ align-items: center;
     border-top: 3px solid;
     display: block;
     color: white;
+  }
+  #header{
+    justify-content: left ;
   }
 
   #hambuger::after, #hambuger::before{

@@ -78,14 +78,13 @@
 
 .whats{
     position: fixed;
-    bottom: 40px;
-    right: 40px;
     z-index: 1000;
-    
+    bottom: 50px;
+    right: 10px;
 }
 
 .whats img{
-    width: 80px;
+  width: 70px;
 }
 
 
